@@ -1,0 +1,27 @@
+
+AnchorLayout:
+	anchor_x:"center"
+	anchor_y:"top"
+	GameTypeMenu:
+
+
+<GameTypeMenu>:
+	pos_hint:{"top":0.7}
+	size_hint: 0.5 , 0.7
+	size_hint:
+	orientation:"vertical"
+	Button:
+		text:"Player VS RandomBot"
+		#preparation to random
+		on_release:app.root.current = "praparation_screen"
+	Button:
+		text:" Player VS OptimalBot"
+		#praparation to optimal
+		on_release:app.root.current = "praparation_screen"
+	Button:
+		text:"Player vs Player"
+		#praparation to pvp
+		on_release:app.root.current = "praparation_screen"
+	Button:
+		text:"Back"
+		on_release: app.root.current = "menu_screen"

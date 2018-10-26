@@ -1,0 +1,31 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+
+ScreenManagement:
+	#transition:FadeTransition()
+	MainMenuScreen:
+	PraparationScreen:
+	GameScreen:
+	ToolsScreen:
+	GameSelectionScreen:
+
+<GameSelectionScreen>:
+	name:"game_selection_screen"
+
+<ToolsScreen>:
+	name:"tools_screen"
+
+<MainMenuScreen>:
+	name: "menu_screen"
+
+
+<PraparationScreen>:
+	name: "praparation_screen"
+	
+
+<GameScreen>:
+	name: "game_screen"
+	Button:
+		on_release: app.root.current = "menu_screen"
+		text:"Go to menu"
+		font_size:50
